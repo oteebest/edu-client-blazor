@@ -1,0 +1,36 @@
+﻿
+<EditForm Model="@model">
+   
+    <div class="modal-body">
+        <div class="form-group">
+            <label for="inputText3" class="col-form-label">Input Text</label>
+            <input id="inputText3" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="inputName">Name</label>
+            <InputText id="inputName"  @bind-Value="model.Name" placeholder="Enter assessment name" class="form-control" ></InputText>
+          
+        </div>
+        <div class="form-group">
+            <label for="inputInstructions" class="col-form-label">Number Input</label>
+            <InputTextArea rows="4" id="inputInstructions" @bind-Value="model.Instructions" class="form-control" placeholder="Enter instructions"></InputTextArea>
+            
+        </div>
+        <div class="form-group">
+            <label for="inputDuration">Duration</label>
+            <InputNumber id="inputName" @bind-Value="model.Duration" placeholder="Enter duration" class="form-control"></InputNumber>
+
+        </div>
+      
+    </div>
+
+    <div class="modal-footer">
+       
+        <button class="btn btn-secondary" @onclick="CloseModal" >Close</button>
+        <button class="btn btn-primary" @onclick="HandleSubmit">Save Changes</button>
+    </div>
+
+
+</EditForm>
+
+

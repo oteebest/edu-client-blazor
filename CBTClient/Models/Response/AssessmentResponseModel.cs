@@ -4,12 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace CBTClient.Models.Response
-{  
-    public class AssessmentResponseModel : AssessmentRequestModel
+{
+    public class AssessmentResponseModel :  ResponseModelBase
     {
-        public string Id { get; set; }
-        public DateTimeOffset CreatedOn { get; set; }
-
+        public AssessmentItem data { get; set; }        
 
     }
+
 }

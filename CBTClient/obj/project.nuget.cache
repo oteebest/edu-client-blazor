@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0EpcaaQl0NAobrHTEp0az6EZVK9iBBEDaCF/HJ1IYTSAJg6Ms5v1kAKkhGn4Z4WONKbQreB66h7HMEuphr5chA==",
+  "dgSpecHash": "cxOzq+ex+djksjme/5XI/qLT3XpdexYBCykiLGgZGSe8QLaaSmSckAYQ8PIGbyTJky2gegFri6K5lJLHnaysOQ==",
   "success": true,
   "projectFilePath": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\CBTClient.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,7 @@
     "C:\\Users\\oteeb\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.8\\microsoft.extensions.primitives.3.1.8.nupkg.sha512",
     "C:\\Users\\oteeb\\.nuget\\packages\\microsoft.jsinterop\\3.1.8\\microsoft.jsinterop.3.1.8.nupkg.sha512",
     "C:\\Users\\oteeb\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.1\\microsoft.jsinterop.webassembly.3.2.1.nupkg.sha512",
+    "C:\\Users\\oteeb\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\oteeb\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\oteeb\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\oteeb\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",

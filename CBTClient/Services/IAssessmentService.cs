@@ -1,4 +1,5 @@
 ﻿using CBTClient.Models;
+using CBTClient.Models.Request;
 using CBTClient.Models.Response;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,9 @@ namespace CBTClient.Services
 
         Task<AssessmentResponseModel> UpdateAssessment(string Id, AssessmentRequestModel model);
 
-        Task<List<QuestionResponseModel>> GetAssesments();
+        Task<AssessmentListResponseModel> GetAssesments();
+
+        Task<AssessmentResponseModel> GetAssesments(string id);
 
     }
 }

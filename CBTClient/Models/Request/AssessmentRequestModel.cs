@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CBTClient.Models
+namespace CBTClient.Models.Request
 {
     public class AssessmentRequestModel
     {
