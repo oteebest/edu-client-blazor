@@ -1,5 +1,130 @@
 ﻿@page "/questions"
-<h3>Questions</h3>
+
+
+<PageHeader PageHeaderTile="Questions"></PageHeader>
+
+<div className="row">
+    <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div className="accrodion-regular">
+            <table className="table">
+                <tr>
+                    <td>
+                        <div className="card">
+                            <div className="card-body">
+                                <div className="row">
+                                    <div className="col form-group">
+                                        <button style="width: 120px"
+                                                class="btn btn-primary btn-sm float-right">
+                                            Add Question
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col form-group">
+                                        <select id="difficultyDDList"
+                                                className="form-control form-control-sm">
+                                            <option value="">Select Difficulty</option>
+
+                                        </select>
+                                    </div>
+                                    <div className="col form-group">
+                                        <select id="subjectDDList"
+                                                className="form-control form-control-sm">
+                                            <option value="">Select Subject</option>
+
+                                        </select>
+                                    </div>
+                                    <div className="col form-group">
+                                        <button style="width: 120px"
+                                                className="btn btn-primary btn-sm float-right"
+                                                id="btnCreate">
+                                            Search
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </td>
+                </tr>
+                @{ int i = 1;}
+
+                @foreach(var question in QuestionCol)
+                {
+                <tr>
+                    <td>
+                        <div id="accordion">
+                            <div className="card">
+                                <div className="card-header" id="headingOne">
+                                    <h5 className="mb-0">
+                                        <button className="btn btn-link"
+                                                data-toggle="collapse"
+                                                data-target="#collapseOne"
+                                                aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                            Question @{i++;}
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne"
+                                     className="collapse show"
+                                     aria-labelledby="headingOne"
+                                     data-parent="#accordion">
+                                    <div className="card-body">
+                                        <p className="lead">{u.text}</p>
+                                        <p>
+                                            <div className="form-check">
+                                                @foreach (var option in question.Options)
+                                                {
+                                                    if (question.QuestionType == "SingleChoice")
+                                                    {
+                                                        <label className="custom-control custom-radio">
+                                                            <input type="radio"
+                                                                   name="radio-stacked"
+                                                                   disabled
+                                                                   checked="@option.IsAnswer"
+                                                                   className="custom-control-input" />
+
+                                                            <span className="custom-control-label">
+                                                               @option.Text
+                                                            </span>
+                                                        </label>
+                                                    }
+                                                    else
+                                                    {
+                                                        <label className="custom-control custom-checkbox">
+
+                                                            <input type="checkbox"
+                                                                   disabled
+                                                                  checked="@option.IsAnswer"
+                                                                   className="custom-control-input" />
+
+                                                            <span className="custom-control-label">
+                                                                @option.Text
+                                                            </span>
+                                                        </label>
+                                                    }
+                                                }
+                                            </div>
+                                        </p>
+                                        <a className="btn btn-secondary"> Edit  </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                }
+
+
+            </table>
+            
+
+        </div>
+    </div>
+</div>
+
 
 @code {
 

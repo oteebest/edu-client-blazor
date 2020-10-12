@@ -33,6 +33,12 @@ namespace CBTClient.Services
 
         }
 
+        public async Task DeleteAssesment(string id)
+        {
+            var response =  await _httpClient.DeleteAsync($"api/v1/assessment/{id}");
+
+        }
+
         public async Task<AssessmentListResponseModel> GetAssesments()
         {
             var response = await _httpClient.GetAsync($"api/v1/assessment");

@@ -13,15 +13,22 @@ namespace CBTClient.Pages
     public partial class Assess
     {
        
-        private string searchText = "";
+        private string SearchText = "";
 
-        private string AssessmentId { get; set; }
+        private AssessmentItem AssessmentItem { get; set; } = new AssessmentItem();
+    
+        public List<AssessmentItem> Assessments { get; set; } = new List<AssessmentItem>();
 
-        public List<AssessmentItem> assessments { get; set; } = new List<AssessmentItem>();
+        public List<AssessmentItem> ClientAssessments { get; set; } = new List<AssessmentItem>();
 
-        public List<AssessmentItem> clientAssessments { get; set; } = new List<AssessmentItem>();
+        public FormWrapper ModalForm { get; set; }
 
-        public FormWrapper modalForm { get; set; }
+        public AssForm AssessmentForm { get; set; }
+
+        public ConfirmDialog ConfirmDialog { get; set; }
+
+        public string DeleteAssessmentId { get; set; }
+
 
         [Inject]
         public IAssessmentService _assessmentService { get; set; }
@@ -32,9 +39,9 @@ namespace CBTClient.Pages
 
             if (response.isSuccessful)
             {
-                assessments = response.data;
+                Assessments = response.data.OrderByDescending(u => u.CreatedOn).ToList();
 
-                clientAssessments = assessments.ToList() ;
+                ClientAssessments = Assessments.ToList() ;
             }
             else
             {
@@ -44,30 +51,49 @@ namespace CBTClient.Pages
 
         private void ShowModal()
         {
-            modalForm.ShowModal();
+            AssessmentItem = new AssessmentItem();
+
+            ModalForm.ShowModal();
         }
 
-        private async Task HandleSubmit(AssessmentRequestModel model)
+      
+
+        private async Task HandleSubmit(AssessmentItem model)
         {
             AssessmentResponseModel response;
 
-            if(string.IsNullOrEmpty(AssessmentId))
+            if(string.IsNullOrEmpty(model.Id))
             {
                 response =  await _assessmentService.CreateAssessment(model);
             }
             else
             {
-                response = await _assessmentService.UpdateAssessment(AssessmentId, model);
+                response = await _assessmentService.UpdateAssessment(model.Id, model);
             }
 
-            if(response.isSuccessful)
+            if (response.isSuccessful)
             {
-               var assessmentItem = response.data;
+                var assessmentItem = response.data;
 
-               assessments =  assessments.Prepend(assessmentItem).ToList();
+                if (string.IsNullOrEmpty(model.Id))
+                {
+                    Assessments = Assessments.Prepend(assessmentItem).ToList();
+                }
+                else
+                {
+                    var item = Assessments.First(u => u.Id == model.Id);
 
-               RefreshAssessments(searchText);
-               StateHasChanged();
+                    item.Duration = assessmentItem.Duration;
+                    item.Instructions = assessmentItem.Instructions;
+                    item.Name = assessmentItem.Name;
+                }
+
+                RefreshAssessments(SearchText);
+
+                ModalForm.HideModal();
+
+                StateHasChanged();
+
             }
             else
             {
@@ -76,16 +102,52 @@ namespace CBTClient.Pages
 
         }
 
+        private async Task OpenForEdit(string assessmentId)
+        {
+            var assessment = Assessments.First(u => u.Id == assessmentId);
+
+            AssessmentItem = assessment;
+
+            ModalForm.ShowModal();
+           
+        }
+
+        private async Task DeleteItem(bool shouldDelete)
+        {
+
+            if(shouldDelete)
+            {
+                await _assessmentService.DeleteAssesment(DeleteAssessmentId);
+
+                Assessments = Assessments.Where( u => u.Id != DeleteAssessmentId).ToList();
+
+                RefreshAssessments(SearchText);
+
+                DeleteAssessmentId = string.Empty;
+            }
+
+        }
+
+
+        private async Task ConfirmDelete(string assessmentId)
+        {
+            DeleteAssessmentId = assessmentId;
+
+            ConfirmDialog.Show();            
+
+        }
+
         private void HandleClose()
         {
-            modalForm.HideModal();
+            ModalForm.HideModal();
+            AssessmentForm.ResetForm();
         }
 
         private void Search(ChangeEventArgs e)
         {
-            searchText = e.Value.ToString();
+            SearchText = e.Value.ToString();
 
-            RefreshAssessments(searchText);
+            RefreshAssessments(SearchText);
 
         }
 
@@ -94,13 +156,13 @@ namespace CBTClient.Pages
 
             if (!string.IsNullOrEmpty(searchText))
             {
-                clientAssessments = assessments.Where(u => u.Name.Contains(searchText)).ToList();
+                ClientAssessments = Assessments.Where(u => u.Name.Contains(searchText,StringComparison.OrdinalIgnoreCase)).ToList();
 
                 StateHasChanged();
             }
             else
             {
-                clientAssessments = assessments.ToList();
+                ClientAssessments = Assessments.ToList();
 
                 StateHasChanged();
             }

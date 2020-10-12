@@ -15,6 +15,7 @@ namespace CBTClient.Models.Request
         public string Instructions { get; set; }
 
         [Required(ErrorMessage = "Enter duration in minutes")]
+        [Range(0,5000,ErrorMessage = "Duration is invalid. Assessment should be above 1 mins")]
         public int? Duration { get; set; }
     }
 }

@@ -40,6 +40,12 @@ namespace CBTClient
             .AddHttpMessageHandler<CBTApiAuthorizationMessageHandler>();
 
 
+            builder.Services.AddHttpClient<IDataService, DataService>(
+            client => client.BaseAddress = new Uri(builder.Configuration.GetSection("CBTAPI").Value))
+            .AddHttpMessageHandler<CBTApiAuthorizationMessageHandler>();
+
+
+
             await builder.Build().RunAsync();
 
         }

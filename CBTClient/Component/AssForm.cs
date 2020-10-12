@@ -1,4 +1,5 @@
 ﻿using CBTClient.Models.Request;
+using CBTClient.Models.Response;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,11 @@ namespace CBTClient.Component
     public partial class AssForm
     {
 
-        public AssessmentRequestModel model { get; set; } = new AssessmentRequestModel();
+        [Parameter]
+        public AssessmentItem model { get; set; } = new AssessmentItem();
 
         [Parameter]
-        public EventCallback<AssessmentRequestModel> OnSubmitCallBack { get; set; }
+        public EventCallback<AssessmentItem> OnSubmitCallBack { get; set; }
         
         [Parameter]
         public EventCallback OnCloseCallBack { get; set; }
@@ -25,6 +27,11 @@ namespace CBTClient.Component
            await OnSubmitCallBack.InvokeAsync(model);
         }
 
+        private void HandleInvalidSubmit()
+        {
+            Console.WriteLine("There are invalid submit. Review your entries");
+        }
+
         protected override Task OnInitializedAsync()
         {
             return base.OnInitializedAsync();
@@ -33,6 +40,19 @@ namespace CBTClient.Component
         public void CloseModal()
         {
             OnCloseCallBack.InvokeAsync(null);
+        }
+
+        public void ResetForm()
+        {
+            model = new AssessmentItem();
+            StateHasChanged();
+        }
+
+        public void LoadEditField(AssessmentItem item)
+        {
+            model = item;
+
+            StateHasChanged();
         }
 
     }

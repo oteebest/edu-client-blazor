@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\8Ln0JzECvcV3Nx-d1pqDPXyl86zeOX2MDT4VdP91HzU=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\SySXxWBv0tBzHkeuy2JQ82szW6Av6c_O_wQSUQqhpIE=.hash",
       "Source": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\CBTClient.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/CBTClient.dll.br"
     },
@@ -296,7 +296,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Y8VmB-rqHIg6EoPs960j8AJBElWeglnLwKisVie3IuY=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\1iImmjxQOTaazaUrR90GdpK9PJRAxeffuBteSq2MtXk=.hash",
       "Source": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\CBTClient.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/CBTClient.pdb.br"
     },
@@ -321,7 +321,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\a3prQoga06uW7g-4beOznllT4ug3L1ake1xdHjOV_yI=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\QRr1VKYG6Zn-bGwTgf7OYAKu5zVyL8sIgn83uQw1K5A=.hash",
       "Source": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }

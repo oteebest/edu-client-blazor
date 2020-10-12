@@ -18,5 +18,7 @@ namespace CBTClient.Services
 
         Task<AssessmentResponseModel> GetAssesments(string id);
 
+        Task DeleteAssesment(string id);
+
     }
 }
