@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CbtApi", "..\..\edu-api.cbt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "..\..\edu.identity\Identity\IdentityServer.csproj", "{4C3C8453-9C80-46DF-81E1-6E806E3016DC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CBTClientUnitTest", "CBTClientUnitTest\CBTClientUnitTest.csproj", "{715A5E98-8BDC-41F1-8CA6-8DAA4057331F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4C3C8453-9C80-46DF-81E1-6E806E3016DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C3C8453-9C80-46DF-81E1-6E806E3016DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C3C8453-9C80-46DF-81E1-6E806E3016DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{715A5E98-8BDC-41F1-8CA6-8DAA4057331F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{715A5E98-8BDC-41F1-8CA6-8DAA4057331F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{715A5E98-8BDC-41F1-8CA6-8DAA4057331F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{715A5E98-8BDC-41F1-8CA6-8DAA4057331F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

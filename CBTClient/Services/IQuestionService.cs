@@ -10,9 +10,10 @@ namespace CBTClient.Services
 {
     public interface IQuestionService
     {
-        Task<QuestionResponseModel> CreateQuestion(QuestionRequestModel model);
+        Task<ResponseModelBase> CreateQuestion(QuestionRequestModel model);
 
-        Task<QuestionResponseModel> UpdateQuestion(string Id, QuestionRequestModel model);
+        Task<ResponseModelBase> UpdateQuestion(string Id, QuestionRequestModel model);
 
+        Task<QuestionListResponseModel> GetQuestions(int pageSize = 10, int pageNumber = 1,string subjectId = "", string difficultyLevelId = "");
     }
 }

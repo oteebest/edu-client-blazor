@@ -14,9 +14,9 @@ namespace CBTClient.Models.Response
 
     public class PredefinedResponseModel
     {
-        public IEnumerable<SubjectResponseModel> subjects { get; set; } = Enumerable.Empty<SubjectResponseModel>();
+        public List<SubjectResponseModel> subjects { get; set; } = Enumerable.Empty<SubjectResponseModel>().ToList();
 
-        public IEnumerable<DifficultLevelResponseModel> difficultyLevels { get; set; } = Enumerable.Empty<DifficultLevelResponseModel>();
+        public List<DifficultLevelResponseModel> difficultyLevels { get; set; } = Enumerable.Empty<DifficultLevelResponseModel>().ToList();
     }
 
 

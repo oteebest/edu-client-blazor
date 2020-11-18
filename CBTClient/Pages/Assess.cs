@@ -1,8 +1,10 @@
-﻿using CBTClient.Component;
+﻿using Blazored.Toast.Services;
+using CBTClient.Component;
 using CBTClient.Models.Request;
 using CBTClient.Models.Response;
 using CBTClient.Services;
 using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,15 +35,22 @@ namespace CBTClient.Pages
         [Inject]
         public IAssessmentService _assessmentService { get; set; }
 
+        [Inject]
+        IToastService toastService { get; set; }
+
         protected override async Task OnInitializedAsync()
         {
+            
+
             var response = await _assessmentService.GetAssesments();
 
             if (response.isSuccessful)
             {
                 Assessments = response.data.OrderByDescending(u => u.CreatedOn).ToList();
 
-                ClientAssessments = Assessments.ToList() ;
+                ClientAssessments = Assessments.ToList();
+
+                
             }
             else
             {
@@ -78,6 +87,9 @@ namespace CBTClient.Pages
                 if (string.IsNullOrEmpty(model.Id))
                 {
                     Assessments = Assessments.Prepend(assessmentItem).ToList();
+
+                    toastService.ShowSuccess("Assessment added successfully");
+
                 }
                 else
                 {
@@ -86,7 +98,14 @@ namespace CBTClient.Pages
                     item.Duration = assessmentItem.Duration;
                     item.Instructions = assessmentItem.Instructions;
                     item.Name = assessmentItem.Name;
+
+
+                    toastService.ShowSuccess("Assessment updated successfully");
+                   
+
+
                 }
+
 
                 RefreshAssessments(SearchText);
 
@@ -124,6 +143,9 @@ namespace CBTClient.Pages
                 RefreshAssessments(SearchText);
 
                 DeleteAssessmentId = string.Empty;
+
+                toastService.ShowSuccess("Assessment deleted successfully");
+
             }
 
         }

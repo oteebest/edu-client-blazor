@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\SySXxWBv0tBzHkeuy2JQ82szW6Av6c_O_wQSUQqhpIE=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\C5azj0Kd2LnyRi9yvkSHrE68tqywDogSDX4xxAVD50A=.hash",
       "Source": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\CBTClient.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/CBTClient.dll.gz"
     },
@@ -171,7 +171,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\oK1Bjv95fH_hSbogUkJE_xDAI203kJG6lL6Sm-NuPWg=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\d04zIStVcFNO5larHi32IT4SSemvK1abhwxWZVFJcRM=.hash",
       "Source": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll.gz"
     },
@@ -206,12 +206,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.Binder.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\bSgsT2x5xMvs8mara5wU_EJwcyHa9GVMU85HwhWcdWM=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\AV8hgKJvxEXM5wtB0rWrbSVD_jqppNW1JXqLoZhO794=.hash",
       "Source": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Web.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\m7Q_cF5-ji3OMfdGlCuE8pQ-iM_kxNHLq-IEWVvIaOg=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\PnKO7lUOW7f4kozb_ZYmBIuHDJnrwSZKrFWmCL15nHk=.hash",
       "Source": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Forms.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Forms.dll.gz"
     },
@@ -239,6 +239,16 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\C4iHzDU4kEkfkK3SIyKjVTaq4QMC_rxGcdJTuYWWiJM=.hash",
       "Source": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Metadata.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Metadata.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\HWXabHlHxFaQt63QVTZrosPonKeggCtk_TOA8PdMedU=.hash",
+      "Source": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BootstrapPaging.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BootstrapPaging.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\SnlpX7tqR4Or48_LUVR7CMv3xLhjy1JBnmDfQCb2GwM=.hash",
+      "Source": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazored.Toast.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.Toast.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ke6Q-xgZ4S1GlnU3EPO8TQYcI5FdDbg9t4C-JGKvSrY=.hash",
@@ -296,7 +306,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\1iImmjxQOTaazaUrR90GdpK9PJRAxeffuBteSq2MtXk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\AP3Uboyoi2Rw0lZLFSNFFv8IaoRYRKKEHozD1Mvfkwo=.hash",
       "Source": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\CBTClient.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/CBTClient.pdb.gz"
     },
@@ -321,7 +331,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\QRr1VKYG6Zn-bGwTgf7OYAKu5zVyL8sIgn83uQw1K5A=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LsmatePPQSjNVPfXaBhWaQUNR2I_vIm9O5Do2X6UnWQ=.hash",
       "Source": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     }

@@ -41,6 +41,14 @@
       "frameworks": {
         "netstandard2.1": {
           "dependencies": {
+            "BlazorBootstrapPaging": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            },
+            "Blazored.Toast": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
             "Microsoft.AspNetCore.Components.Authorization": {
               "target": "Package",
               "version": "[3.1.8, )"

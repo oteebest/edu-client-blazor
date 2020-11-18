@@ -1,10 +1,12 @@
 ﻿using CBTClient.Models;
 using CBTClient.Models.Request;
 using CBTClient.Models.Response;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Json;
 using System.Threading.Tasks;
 
 namespace CBTClient.Services
@@ -18,14 +20,31 @@ namespace CBTClient.Services
             _httpClient = httpClient;
         }
 
-        public Task<QuestionResponseModel> CreateQuestion(QuestionRequestModel model)
+   
+
+        public async Task<QuestionListResponseModel> GetQuestions(int pageSize = 10, int pageNumber = 1, string subjectId = "", string difficultyLevelId = "")
         {
-            throw new NotImplementedException();
+            var response = await _httpClient.GetFromJsonAsync<QuestionListResponseModel>($"api/v1/question?pageSize={pageSize}&pageNumber={pageNumber}&subjectId={subjectId}&difficultyLevelId={difficultyLevelId}");
+
+            return response;
         }
 
-        public Task<QuestionResponseModel> UpdateQuestion(string Id, QuestionRequestModel model)
+        public async Task<ResponseModelBase> UpdateQuestion(string Id, QuestionRequestModel model)
         {
-            throw new NotImplementedException();
+
+            var response = await _httpClient.PostAsJsonAsync($"api/v1/question/{Id}", model);
+
+            return JsonConvert.DeserializeObject<ResponseModelBase>(await response.Content.ReadAsStringAsync());
+
+        }
+
+        public async Task<ResponseModelBase> CreateQuestion(QuestionRequestModel model)
+        {
+                       
+            var response = await _httpClient.PostAsJsonAsync("api/v1/question", model);
+
+            return JsonConvert.DeserializeObject<ResponseModelBase>(await response.Content.ReadAsStringAsync());
+
         }
     }
 }

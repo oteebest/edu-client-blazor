@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using CBTClient.MessageHandlers;
 using CBTClient.Services;
+using Blazored.Toast;
 
 namespace CBTClient
 {
@@ -45,6 +46,7 @@ namespace CBTClient
             .AddHttpMessageHandler<CBTApiAuthorizationMessageHandler>();
 
 
+            builder.Services.AddBlazoredToast();
 
             await builder.Build().RunAsync();
 
