@@ -35,17 +35,17 @@
              id="card-pill-1"
              role="tabpanel"
              aria-labelledby="card-tab-1">
-            <QuestionManager PredefinedData={predefinedData}
+            <QuestionManager  SubjectList="SubjectList" DifficultytList="DifficultytList"
                              QuestionType="SingleChoice"
-                             handleSubmit={handleSubmit}></QuestionManager>
+                             OnSubmitCallBack="HandleSubmit"></QuestionManager>
         </div>
         <div class="tab-pane fade"
              id="card-pill-2"
              role="tabpanel"
              aria-labelledby="card-tab-2">
-            <QuestionManager PredefinedData={predefinedData}
-                             QuestionType="MultipleChoice"
-                             handleSubmit={handleSubmit}></QuestionManager>
+            <QuestionManager  DifficultytList="DifficultytList" SubjectList="SubjectList"
+                             QuestionType="MultipleChoice"  OnSubmitCallBack="HandleSubmit"
+                             ></QuestionManager>
         </div>
     </div>
 </EditForm>

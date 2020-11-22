@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BlazorBootstrapPaging" Version="1.0.0.1" />
+    <PackageReference Include="BlazorBootstrapPaging" Version="1.0.0.2" />
     <PackageReference Include="Blazored.Toast" Version="3.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="3.1.8" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.1" />

@@ -23,7 +23,7 @@
     <Import Project="$(NuGetPackageRoot)xunit.core\2.4.0\build\xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core\2.4.0\build\xunit.core.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.authentication\3.2.1\buildTransitive\Microsoft.AspNetCore.Components.WebAssembly.Authentication.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.authentication\3.2.1\buildTransitive\Microsoft.AspNetCore.Components.WebAssembly.Authentication.props')" />
     <Import Project="$(NuGetPackageRoot)blazored.toast\3.1.2\buildTransitive\Blazored.Toast.props" Condition="Exists('$(NuGetPackageRoot)blazored.toast\3.1.2\buildTransitive\Blazored.Toast.props')" />
-    <Import Project="$(NuGetPackageRoot)blazorbootstrappaging\1.0.0.1\buildTransitive\BlazorBootstrapPaging.props" Condition="Exists('$(NuGetPackageRoot)blazorbootstrappaging\1.0.0.1\buildTransitive\BlazorBootstrapPaging.props')" />
+    <Import Project="$(NuGetPackageRoot)blazorbootstrappaging\1.0.0.2\buildTransitive\BlazorBootstrapPaging.props" Condition="Exists('$(NuGetPackageRoot)blazorbootstrappaging\1.0.0.2\buildTransitive\BlazorBootstrapPaging.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\oteeb\.nuget\packages\xunit.analyzers\0.10.0</Pkgxunit_analyzers>

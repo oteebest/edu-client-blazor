@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wvDNOOpzzJ6ojp7WtXY97KxTB7QJibap87cgeDa/iu+Z7eu+Zrg+rTLLEJ+hbK6DA0emkqxj1QP6f8mpNSnCzg==",
+  "dgSpecHash": "zlOc3D5BoJocS1RfyN35ROTUJ76LF35/6GJtOp8bLGvPLpVTdVn7DJlDtChmo5oESYFwSX7r346/UNhIX1ndFw==",
   "success": true,
   "projectFilePath": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClient\\CBTClient.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\oteeb\\.nuget\\packages\\blazorbootstrappaging\\1.0.0.1\\blazorbootstrappaging.1.0.0.1.nupkg.sha512",
+    "C:\\Users\\oteeb\\.nuget\\packages\\blazorbootstrappaging\\1.0.0.2\\blazorbootstrappaging.1.0.0.2.nupkg.sha512",
     "C:\\Users\\oteeb\\.nuget\\packages\\blazored.toast\\3.1.2\\blazored.toast.3.1.2.nupkg.sha512",
     "C:\\Users\\oteeb\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.8\\microsoft.aspnetcore.authorization.3.1.8.nupkg.sha512",
     "C:\\Users\\oteeb\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.8\\microsoft.aspnetcore.components.3.1.8.nupkg.sha512",

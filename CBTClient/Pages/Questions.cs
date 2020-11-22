@@ -88,8 +88,7 @@ namespace CBTClient.Pages
 
         private void ShowModal()
         {
-            QuestionItem = new QuestionItem();
-
+         
             ModalForm.ShowModal();
         }
 

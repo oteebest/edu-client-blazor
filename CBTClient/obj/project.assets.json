@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
-      "BlazorBootstrapPaging/1.0.0.1": {
+      "BlazorBootstrapPaging/1.0.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components": "3.1.8",
@@ -528,14 +528,14 @@
     }
   },
   "libraries": {
-    "BlazorBootstrapPaging/1.0.0.1": {
-      "sha512": "H+wxRVvd9gpG90Twrq79fr9QK8afccVmeeFu1BvEi+16gocURgMDRR6ktP4s8ycVF1V7zFyWVtonL6spGuh++A==",
+    "BlazorBootstrapPaging/1.0.0.2": {
+      "sha512": "SQAxrKwamqDHhC4vYvRkg26p8CY3Vrol6a5lHEoxe2kPju1ZJ4Wzd0vTxQWO+rtnYsFfk7P8PSpJ53YL4y5rbg==",
       "type": "package",
-      "path": "blazorbootstrappaging/1.0.0.1",
+      "path": "blazorbootstrappaging/1.0.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "blazorbootstrappaging.1.0.0.1.nupkg.sha512",
+        "blazorbootstrappaging.1.0.0.2.nupkg.sha512",
         "blazorbootstrappaging.nuspec",
         "build/BlazorBootstrapPaging.props",
         "build/Microsoft.AspNetCore.StaticWebAssets.props",
@@ -1845,7 +1845,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
-      "BlazorBootstrapPaging >= 1.0.0.1",
+      "BlazorBootstrapPaging >= 1.0.0.2",
       "Blazored.Toast >= 3.1.2",
       "Microsoft.AspNetCore.Components.Authorization >= 3.1.8",
       "Microsoft.AspNetCore.Components.WebAssembly >= 3.2.1",
@@ -1900,7 +1900,7 @@
         "dependencies": {
           "BlazorBootstrapPaging": {
             "target": "Package",
-            "version": "[1.0.0.1, )"
+            "version": "[1.0.0.2, )"
           },
           "Blazored.Toast": {
             "target": "Package",

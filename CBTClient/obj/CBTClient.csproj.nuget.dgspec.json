@@ -43,7 +43,7 @@
           "dependencies": {
             "BlazorBootstrapPaging": {
               "target": "Package",
-              "version": "[1.0.0.1, )"
+              "version": "[1.0.0.2, )"
             },
             "Blazored.Toast": {
               "target": "Package",

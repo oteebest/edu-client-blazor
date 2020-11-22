@@ -1,4 +1,6 @@
-﻿using CBTClient.Models.Response;
+﻿using CBTClient.Models;
+using CBTClient.Models.Response;
+using CBTClient.Util;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
@@ -21,9 +23,17 @@ namespace CBTClient.Component
         [Parameter]
         public EventCallback<QuestionItem> OnSubmitCallBack { get; set; }
 
+        [Parameter]
+        public List<SubjectResponseModel> SubjectList { get; set; }
 
-        public async Task HandleSubmit()
+        [Parameter]
+        public List<DifficultLevelResponseModel> DifficultytList { get; set; }
+
+
+        public async Task HandleSubmit(QuestionManagerModel question)
         {
+            var model = question.Map();
+
             await OnSubmitCallBack.InvokeAsync(model);
         }
 
