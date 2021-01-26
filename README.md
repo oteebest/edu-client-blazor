@@ -2,7 +2,7 @@
 
 blazor front end
 
-![Assessment List Image](repoimages/assessmentlist.JPG)
+![Assessment List Image](repoimages/assessmentlist.jpg)
 
 ![Add Assessment](repoimages/createassessment.jpg)
 
