@@ -23,7 +23,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
@@ -32,8 +32,8 @@
           "https://nuget.devexpress.com/a841N8IbIS5dThfjFiwj2I2rezqybvcxlrdketGljPfhXdIZ41/api": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -44,8 +44,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "BlazorBootstrapPaging": {
               "target": "Package",
@@ -55,30 +55,31 @@
               "target": "Package",
               "version": "[3.1.2, )"
             },
-            "DevExpress.Reporting.Core": {
-              "target": "Package",
-              "version": "[20.2.4, )"
-            },
             "Microsoft.AspNetCore.Components.Authorization": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[3.1.8, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[3.2.1, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[3.2.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[3.2.1, )"
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[3.1.4, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -86,7 +87,7 @@
             },
             "System.Net.Http.Json": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[3.2.0, )"
             }
           },
           "imports": [
@@ -99,23 +100,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
-              "version": "[5.0.2, 5.0.2]"
-            }
-          ],
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
+            "NETStandard.Library": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "browser-wasm": {
-          "#import": []
         }
       }
     }
