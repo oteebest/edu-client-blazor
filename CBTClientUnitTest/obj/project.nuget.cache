@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ptV8JWqdaQbpThVc6ETCLo7KhhtbulerT9UesAwk7QzKdwuc372y8Bivlc1JWhTmwp6i7GLRiiBgCm+EbFg9ew==",
+  "dgSpecHash": "9CzuzvhPTci9HSgDKdtv4vZo1RjmBAuc/cJOwRsQm0OGRXBpf82J8i8AygdYBomT3r8VyCELKgpQuhCo2d7NOg==",
   "success": true,
   "projectFilePath": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClientUnitTest\\CBTClientUnitTest.csproj",
   "expectedPackageFiles": [

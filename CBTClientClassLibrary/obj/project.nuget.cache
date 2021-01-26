@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "m3bA7k1hJi+J90qbaL+jW2PEETHNbiaHnCR17+zRwH/TkUfh3ifa30Z6UMetILNvUux7l7VcD54HwGx+s7WBVg==",
+  "success": true,
+  "projectFilePath": "C:\\OtherProjects\\EducationApp\\edu-client-cbt-blazor\\CBTClient\\CBTClientClassLibrary\\CBTClientClassLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\oteeb\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
