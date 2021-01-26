@@ -2,12 +2,10 @@
 
 blazor front end
 
-![Assessment List Image](repoimages/assessments.JPG)
+![Assessment List Image](repoimages/assessmentlist.JPG)
 
-![Add Assessment](repoimages/newassessment.jpg)
+![Add Assessment](repoimages/createassessment.jpg)
 
-![Questions List Image](repoimages/questions.jpg)
+![Questions List Image](repoimages/questionlist.jpg)
 
-![](repoimages/newquestion.jpg)
-
-![](media/media4.gif)
+![](repoimages/createquestion.jpg)
